@@ -1,8 +1,6 @@
-FROM alpine
+FROM node:lts
 
 WORKDIR /opt/app
-
-RUN apk add --no-cache nodejs
 
 ADD https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store.bundle.js /opt/app/sub-store.bundle.js
 
